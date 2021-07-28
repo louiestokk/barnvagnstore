@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "title": "BRESSO DUOVAGN",
+      "price": 4990,
+      "image1": "./products/bresso-gf01.jpg",
+      "image2": "./products/bresso-gf02.jpg",
+      "image3": "./products/bresso-gf03.jpg",
+      "image4": "./products/bresso-gf04.jpg",
+      "description": "En high-end barnvagn som består av en ram med hjul, gondol, barnvagn    och eventuellt (till extra kostnad) en bilstol som också fungerar som en bärare."
+    },
+    {
+      "title": "QUER2 DUOVAGN",
+      "price": 4990,
+      "image1": "./products/quiero2.jpg",
+      "description": "QUERO alu är premiärmodellen av en djup gångvagn på en aluminiumram med ett innovativt vikningssystem. Quero alu har ekologläder kantad guide, rymlig shoppingkorg och väldigt lätt plasyikową barnvagn, har justerbar justerbar ryggstöd och gondol rygg justerbar från utsidan tack vare det moderna systemet."
+    },
+    {
+      "title": "ANEX SPORT VOGUE",
+      "price": 6990,
+      "image1": "./products/anex-sport-2018-arch-r.jpg",
+      "description": "QUERO alu är premiärmodellen av en djup gångvagn på en aluminiumram med ett innovativt vikningssystem. Quero alu har ekologläder kantad guide, rymlig shoppingkorg och väldigt lätt plasyikową barnvagn, har justerbar justerbar ryggstöd och gondol rygg justerbar från utsidan tack vare det moderna systemet."
+    },
+    {
+      "title": "MULTI-2020 KOMPLETT",
+      "price": 2490,
+      "image1": "./products/multi-twist-40.jpg",
+      "description": "QUERO alu är premiärmodellen av en djup gångvagn på en aluminiumram med ett innovativt vikningssystem. Quero alu har ekologläder kantad guide, rymlig shoppingkorg och väldigt lätt plasyikową barnvagn, har justerbar justerbar ryggstöd och gondol rygg justerbar från utsidan tack vare det moderna systemet."
+    }
+  ]
+}

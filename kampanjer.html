@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ee0a0de948.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ehandel || Template</title>
+  </head>
+  <body>
+    <div class="nav-meny-container hidden">
+      <div class="close-container">
+        <i class="far fa-times-circle"></i>
+      </div>
+      <div class="nav-meny">
+        <ul class="navmenyn">
+          <li><a href="#">Barnvagnar</a></li>
+          <li><a href="#">Barnvagnspaket</a></li>
+          <li><a href="#">Dubbelvagnar</a></li>
+          <li><a href="#">Duovagnar</a></li>
+          <li><a href="#">Barnrummet</a></li>
+          <li><a href="#">Bilbarnstol</a></li>
+          <li><a href="#">Isofix</a></li>
+          <li><a href="#">Åkpåsar</a></li>
+          <li><a href="#">Tillbehör</a></li>
+          <li><a href="#">Bästsäljare</a></li>
+          <li><a href="#">Nyheter</a></li>
+          <li><a href="#">Rea</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-header">
+      <p class="top-header-deals">summer favorites 🍦 | FANTASTISKA PRISER</p>
+    </div>
+    <div class="main-top-container">
+      <div class="nav-btn">
+        <i class="fas fa-bars"></i>
+        <p>Meny</p>
+      </div>
+      <div class="logo-container">
+        <h3 class="logo">BarnvagnCity</h3>
+        <div class="se">.se</div>
+      </div>
+      <div class="icons-container">
+        <div class="searchicon">
+          <i class="fas fa-search"></i>
+          <p>sök</p>
+        </div>
+        <div>
+          <span class="wish">1</span>
+          <i class="far fa-heart"></i>
+          <p>önskelista</p>
+        </div>
+        <div>
+          <span class="cartitems">1 </span>
+          <i class="fas fa-cart-plus"></i>
+          <p>varukorg</p>
+        </div>
+      </div>
+    </div>
+    <div class="search-container">
+      <i class="fas fa-search"></i>
+      <input
+        type="text"
+        class="searchinput"
+        placeholder="Hej! va letar du efter?"
+      />
+    </div>
+    <div class="kampanjersida-container">
+      <div class="kampanjersida-top-container">
+        <h4>10% rabatt för den aktiva familjen!</h4>
+        <h5>Använd rabattkoden ACTIVE10 i kassan.</h5>
+        <div class="kampanjersida-button-container">
+          <button class="filterar-kamp">FILTRERA</button>
+          <button class="sortera-kamp">SORTERA</button>
+        </div>
+      </div>
+      <div class="kapmanjersida-product-container"></div>
+    </div>
+    <div class="nyhetsbrev-container">
+      <div class="top-footer">
+        <h1>Nyhetsbrev</h1>
+        <p>
+          Få våra nyhetsbrev och erbjudanden före alla andra, signa upp och få
+          hemliga rabatter och dom lägsta priserna!
+        </p>
+        <input type="email" placeholder="Ange din e-post" />
+        <button class="news-btn">Prenumerera</button>
+      </div>
+      <div class="splittare"></div>
+      <div class="middle-footer">
+        <div class="mdfo">
+          <h1>Kategorier</h1>
+          <ul class="footer-category">
+            <li>> Barnvagnar</li>
+            <li>> Barnrum</li>
+            <li>> Tillbehör</li>
+            <li>> Åkpåsar</li>
+            <li>> Bilbarnstol</li>
+            <li>> isofix</li>
+            <li>> Leksaker</li>
+            <li>> Nyheter</li>
+          </ul>
+        </div>
+        <div class="mdfo">
+          <h1>Information</h1>
+          <ul class="footer-info">
+            <li>> Extrapriser</li>
+            <li>> Nyheter</li>
+            <li>> Bästsäljare</li>
+            <li>> Våra butiker</li>
+            <li>> Kontakta oss</li>
+            <li>> Köp & leveransvillkor</li>
+            <li>> Kundtjänst</li>
+          </ul>
+        </div>
+        <div class="mdfo">
+          <h1>Mitt konto</h1>
+          <ul class="footer-account">
+            <li>> Mina beställningar</li>
+            <li>> Mina varureturer</li>
+            <li>> Mina krediteringar</li>
+            <li>> Mina adresser</li>
+            <li>> Min personliga information</li>
+            <li>> Mina kuponger</li>
+          </ul>
+        </div>
+        <div class="mdfo">
+          <h1>Butiksinformation</h1>
+          <ul class="footer-store">
+            <li>BarnvagnCity</li>
+            <li><a href="#">Tel: 000-000 000</a></li>
+            <li><a href="#">Adress: Testvägen 20 Stockholm</a></li>
+            <li>Orgnr: 00000000</li>
+            <li><a href="#">Email: test@test.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="botten-container">
+      <img src="./images/klarna-og.png" alt="" />
+      <img src="./images/Swish-logga-h.jpg" alt="" />
+      <img src="./images/paypal.jpg" alt="" />
+    </div>
+    <script>
+      const url = "https://api.jsonbin.io/b/610160aea263d14a297dd773";
+      const key =
+        "$2b$10$AkibEWIB0Xm0SHRtMsKy0eMkm/qbKlQQPA/W6Yh649BNraoAbkNam";
+      const productContiner = document.querySelector(
+        ".kapmanjersida-product-container"
+      );
+
+      // const getData = async () => {
+      //   try {
+      //     const settings = {
+      //       method: "GET",
+      //       headers: {
+      //         "secret-key": key,
+      //       },
+      //     };
+      //     const resp = await fetch(url, settings);
+      //     const data = await resp.json();
+      //     const { items } = data;
+      //     displayData(items);
+      //   } catch (error) {
+      //     console.error(error);
+      //   }
+      // };
+      // getData();
+
+      // const displayData = (data) => {
+      //   const content = data[0];
+      //   let html = `
+      //    <div class="pcon">
+      //     <div class="rbtcon">
+      //       <p>RABATTKOD</p>
+      //       <i class="far fa-heart"></i>
+      //     </div>
+      //     <div class="imgcon">
+      //       <img src="${content.image1}" alt="" />
+      //       <p>${content.title}</p>
+      //       <span>${content.price} kr</span>
+      //       <button class="buy-btn">KÖP</button>
+      //     </div>
+      //   </div>
+      //   `;
+      //   productContiner.insertAdjacentHTML("afterbegin", html);
+      // };
+
+      const hamtainfo = async () => {
+        try {
+          const resp = await axios("./products.json");
+          visainfo(resp.data);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+      hamtainfo();
+
+      const visainfo = (data) => {
+        const { items } = data;
+        items.forEach((el) => {
+          let html = `
+        <div class="pcon">
+          <div class="rbtcon">
+            <p>RABATTKOD</p>
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="imgcon">
+            <img src="${el.image1}" alt="" />
+            <p>${el.title}</p>
+            <span>${el.price} kr</span>
+            <button class="buy-btn">KÖP</button>
+          </div>
+        </div>`;
+          productContiner.insertAdjacentHTML("afterbegin", html);
+        });
+      };
+    </script>
+  </body>
+</html>
